@@ -14,14 +14,14 @@ const Pagination = ({ currentPage, repoPerPage, totalRep, paginate, prev, next }
 
             <ul className='pagination' style={{ listStyle: "none" }}>
                 <li className='page-item'>
-                    <a onClick={() => prev()} href='!#' className='page-link' style={{color:"black"}}>Previous</a>
+                    <a onClick={() => prev()} className='page-link' style={{color:"black"}}>Previous</a>
                 </li>
                 {
                     pageNumbers.map(number => {
                         // console.log(number, currentPage)
                         return (
                             <li key={number} className="page-item">
-                                <a onClick={() => paginate(number)} href='!#' className='page-link' style={currentPage===number? {backgroundColor:"blue", color:"white", border:"none"}:{color:"black"}}>
+                                <a onClick={() => paginate(number)} className='page-link' style={currentPage===number? {backgroundColor:"blue", color:"white", border:"none"}:{color:"black"}}>
                                     {number}
                                 </a>
                             </li>
@@ -29,7 +29,7 @@ const Pagination = ({ currentPage, repoPerPage, totalRep, paginate, prev, next }
                     })
                 }
                 <li className='page-item'>
-                    <a onClick={() => next()} href='!#' className='page-link' style={{color:"black"}}>Next</a>
+                    <a onClick={() => next()} className='page-link' style={{color:"black"}}>Next</a>
                 </li>
             </ul>
         </nav>
