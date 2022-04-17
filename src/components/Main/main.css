@@ -1,0 +1,24 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown {
+    margin-top: 30px;
+}
+
+.search input{
+    width: 500px;
+    padding: 8px;
+    margin: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 600px){
+   .search input{
+       max-width: 300px;
+   }
+  }

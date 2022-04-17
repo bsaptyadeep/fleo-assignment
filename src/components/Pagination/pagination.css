@@ -1,0 +1,23 @@
+.pagination{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 34px 180px;
+}
+
+.page-item *{
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.selected *{
+    background-color: rgb(81, 33, 255);
+    color: white;
+}
+
+@media only screen and (max-width: 600px){
+    .pagination{
+        margin: 0;
+    }
+   }
